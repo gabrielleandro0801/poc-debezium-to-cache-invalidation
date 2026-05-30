@@ -1,0 +1,36 @@
+{
+  "name": "poc-debezium-to-cache-invalidation",
+  "version": "1.0.0",
+  "description": "``` bash sh 1-add-debezium-on-postgres.sh sh 2-list-connectors.sh ```",
+  "main": "index.js",
+  "scripts": {
+    "lint:fix": "prettier --config .prettierrc 'src/**/*.ts' --write --check",
+    "execute": "ts-node-dev --respawn --transpile-only --ignore-watch node_modules --no-notify $1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gabrielleandro0801/poc-debezium-to-cache-invalidation.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/gabrielleandro0801/poc-debezium-to-cache-invalidation/issues"
+  },
+  "homepage": "https://github.com/gabrielleandro0801/poc-debezium-to-cache-invalidation#readme",
+  "dependencies": {
+    "@confluentinc/kafka-javascript": "1.9.0",
+    "express": "5.2.1",
+    "ioredis": "5.11.0",
+    "pg": "8.21.0",
+    "sequelize": "6.37.8"
+  },
+  "devDependencies": {
+    "@types/express": "5.0.6",
+    "@types/node": "22.13.14",
+    "prettier": "3.8.3",
+    "ts-node-dev": "2.0.0",
+    "typescript": "6.0.3"
+  }
+}
